@@ -129,17 +129,21 @@ def question_6():
 
 
 if __name__ == '__main__':
-    option = input('Digite o número da questão:\n')
-    match option:
-        case '1':
-            question_1()
-        case '2':
-            question_2()
-        case '3':
-            question_3()
-        case '4':
-            question_4()
-        case '5':
-            question_5()
-        case '6':
-            question_6()
+    while True:
+        option = input('Digite o número da questão ou qualquer outra coisa pra sair:\n')
+        match option:
+            case '1':
+                question_1()
+            case '2':
+                question_2()
+            case '3':
+                question_3()
+            case '4':
+                question_4()
+            case '5':
+                question_5()
+            case '6':
+                question_6()
+            case _:
+                print('Tchau!')
+                break
